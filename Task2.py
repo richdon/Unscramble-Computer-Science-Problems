@@ -39,8 +39,6 @@ for call in calls:
         call_times[call[1]] = int(call[-1])
     else:
         call_times[call[1]] += int(call[-1]) 
-
-
   
 print(f"{max(call_times)} spent the longest time, {max(call_times.values())} \
 seconds, on the phone during September 2016.")
