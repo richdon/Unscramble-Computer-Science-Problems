@@ -46,7 +46,7 @@ The percentage should have 2 decimal digits
 """
 
 """
-Worst-Case: O(n^2)
+Worst-Case: O(n log n)
 
 """
 # Part A
