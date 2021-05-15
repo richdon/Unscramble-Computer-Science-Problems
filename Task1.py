@@ -27,18 +27,14 @@ def distinct_numbers(texts, calls):
     unique_nums = set()
     
     for call in calls:
-        for num in call:
-            if len(num) == 13 or len(num) == 11:
-                unique_nums.add(num)
+        for num in call[:2]:
+            unique_nums.add(num)
                 
     
     for txt in texts:
-        for num in txt:
-            if len(num) == 11:
-                unique_nums.add(num)
+        for num in txt[:2]:
+            unique_nums.add(num)
     
     print(f"There are {len(unique_nums)} different numbers in the records")
-    
-    
     
 distinct_numbers(texts, calls)

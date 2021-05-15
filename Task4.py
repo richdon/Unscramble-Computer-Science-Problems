@@ -39,11 +39,9 @@ out_num = {num[0] for num in calls}
 
 incoming = {num[1] for num in calls}  
 
-telemarketers = set()
+telemarketers = out_num - incoming - all_txt_nums
 
-for num in out_num:
-    if num not in all_txt_nums and num not in incoming:
-        telemarketers.add(num)
+
     
 print("These numbers could be telemarketers: ")
 [print(num) for num in sorted(telemarketers)]

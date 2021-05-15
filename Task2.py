@@ -24,15 +24,9 @@ September 2016.".
 Worst-Case: O(n)
 
 """
-sept_calls = []
-for call in calls:
-    if call[-2][:2] == '09':
-        sept_calls.append(call)
-
-
 call_times = {}
 
-for call in sept_calls:
+for call in calls:
     
     # outgoing call times
     if call[0] not in call_times:
